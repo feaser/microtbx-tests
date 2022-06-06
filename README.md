@@ -22,7 +22,11 @@ Alternatively, you can clone and obtain the submodules in one go by using the `-
 git clone --recursive https://github.com/feaser/microtbx-tests.git ~/MicroTBXTests
 ```
 
-# Contact
+## Running the unit tests
+
+The `tests` subdirectory contains the programs that run the unit tests. Refer to the included `README.md` in the platform specific subdirectories for details on building these test programs.
+
+## Contact
 
 Development and maintenance of MicroTBX is sponsored by Feaser. Feaser also offers integration/customization services, and professional technical support on a commercial basis:
 
