@@ -50,3 +50,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# MicroTBX software components. Manually clone these into the third_party directory.
+third_party/microtbx*
