@@ -15,14 +15,6 @@ The MicroTBX software component needs to be manually obtained:
 ```
 cd third_party
 git clone https://github.com/feaser/microtbx.git microtbx
-git submodule update --init
-```
-
-Alternatively, you can clone and obtain the submodules in one go by using the `--recursive` argument. Example:
-
-```
-cd third_party
-git --recursive https://github.com/feaser/microtbx.git microtbx
 ```
 
 # Building
