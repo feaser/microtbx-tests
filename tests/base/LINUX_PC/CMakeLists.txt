@@ -1,6 +1,6 @@
 #****************************************************************************************
 # \file         CMakeLists.txt
-# \brief        CMake descriptor file for MicroTBX demo program for Linux/GCC.
+# \brief        CMake descriptor file for MicroTBX test program for Linux/GCC.
 # \internal
 #----------------------------------------------------------------------------------------
 #                          C O P Y R I G H T
