@@ -5,21 +5,17 @@ Framework for running unit tests on the MicroTBX software components.
 
 ## Getting the code
 
-To get the code, clone the Git repository to a subdirectory, for example inside your own home directory:
+To get the code, clone the Git repository to a subdirectory, for example inside your own home directory. Make sure to add the `--recursive` flag to also clone the submodules:
 
-    git clone https://github.com/feaser/microtbx-tests.git ~/MicroTBXTests
-
-This Git repository makes use of submodules. This means that one more step is needed to also get the code of the submodules: `git submodule update --init`. For example:
-
-```
-cd ~/MicroTBXTests
-git submodule update --init
-```
-
-Alternatively, you can clone and obtain the submodules in one go by using the `--recursive` argument. Example:
-
-```
+```bash
 git clone --recursive https://github.com/feaser/microtbx-tests.git ~/MicroTBXTests
+```
+
+Afterwards, clone the actual MicroTBX software component into the `third_party` subdirectory:
+
+```bash
+cd ~/MicroTBXTests/third_party
+git clone https://github.com/feaser/microtbx.git microtbx
 ```
 
 ## Running the unit tests

@@ -51,5 +51,10 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
+# Visual Studio Code workspace
+*.code-workspace
+.vscode/*
+
+
 # MicroTBX software components. Manually clone these into the third_party directory.
 third_party/microtbx*

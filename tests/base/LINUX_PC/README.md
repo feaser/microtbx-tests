@@ -4,25 +4,18 @@ This program performs unit tests on the MicroTBX software components. It is targ
 
 The test program relies on [CMake](https://cmake.org/) to automatically detect the build tools on your system and to generate the build environment for it. On a Debian/Ubuntu based system, the following command installs the build dependencies:
 
-```
+```bash
 sudo apt-get install build-essential cmake
-```
-
-# Getting the code
-
-The MicroTBX software component needs to be manually obtained:
-
-```
-cd third_party
-git clone https://github.com/feaser/microtbx.git microtbx
 ```
 
 # Building
 
-Using the terminal, set the working directory to the `./build` directory. Next, type the following two commands to detect and generate the Unix Makefiles based build environment and then build the test program:
+Using the terminal, set the working directory to where you cloned the unit tests framework (e.g. `~/MicroTBXTests`). Next, type the following commands to detect and generate the Unix Makefiles based build environment and then build the test program:
 
-```
+```bash
+cd build
 cmake ..
+cd tests/base/LINUX_PC
 make
 ```
 
@@ -30,7 +23,7 @@ This creates the `microtbx_tests` executable in the `./build` directory.
 
 # Running
 
-After building the test program, you can perform the unit tests by starting the `microtbx_tests` executable, located in the `./build` directory:
+After building the test program, you can perform the unit tests by starting the `microtbx_tests` executable, located in the current directory:
 
 ```
 ./microtbx_tests
