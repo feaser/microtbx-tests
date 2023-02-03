@@ -5,7 +5,7 @@ This program performs unit tests on the MicroTBX software components. It is targ
 The test program relies on [CMake](https://cmake.org/) to automatically detect the build tools on your system and to generate the build environment for it. On a Debian/Ubuntu based system, the following command installs the build dependencies:
 
 ```bash
-sudo apt-get install build-essential cmake
+sudo apt-get install build-essential cmake cppcheck
 ```
 
 # Building
@@ -30,3 +30,12 @@ After building the test program, you can perform the unit tests by starting the 
 ```
 
 The test program produces text on the standard output to inform you about its progress, including a final summary about the passed/failed tests.
+
+# Linting
+
+To lint the code for static code analysis to verify MISRA compliance, run:
+
+```bash
+make microtbx_MISRA
+```
+

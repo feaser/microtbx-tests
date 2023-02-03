@@ -39,3 +39,7 @@ target_link_libraries(${PROJECT_NAME}
     ${PROJECT_LIBRARIES}
 )
 
+# Create microtbx_MISRA for MISRA checking with cppcheck.
+include("${CMAKE_SOURCE_DIR}/third_party/microtbx/source/misra.cmake")
+
+
