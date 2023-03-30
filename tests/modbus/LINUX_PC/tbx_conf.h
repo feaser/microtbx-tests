@@ -1,5 +1,5 @@
 /************************************************************************************//**
-* \file         tests/base/LINUX_PC/tbx_conf.h
+* \file         tests/modbus/LINUX_PC/tbx_conf.h
 * \brief        MicroTBX configuration header file.
 * \internal
 *----------------------------------------------------------------------------------------

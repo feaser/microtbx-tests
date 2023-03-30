@@ -11,7 +11,7 @@ To get the code, clone the Git repository to a subdirectory, for example inside 
 git clone --recursive https://github.com/feaser/microtbx-tests.git ~/MicroTBXTests
 ```
 
-Afterwards, clone the actual MicroTBX software component into the `third_party` subdirectory:
+Afterwards, clone the actual MicroTBX software components into the `third_party` subdirectory. Example for `microtbx`:
 
 ```bash
 cd ~/MicroTBXTests/third_party

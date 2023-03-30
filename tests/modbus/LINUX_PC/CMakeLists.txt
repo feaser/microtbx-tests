@@ -1,9 +1,10 @@
 # Configure the project name.
-project(microtbx_tests)
+project(microtbx_modbus_tests)
 
 # Configure project sources.
 set(PROJECT_SOURCES
     "${CMAKE_CURRENT_LIST_DIR}/main.c"
+    "${CMAKE_CURRENT_LIST_DIR}/tbxmb_port.c"
 )
 
 # Configure project include directories.
@@ -13,10 +14,12 @@ set(PROJECT_INCLUDES
 
 # Configure project libraries.
 set(PROJECT_LIBRARIES
-	unity
+    #unity
     microtbx
     microtbx-linux
-    microtbx-tests
+    microtbx-modbus
+    microtbx-modbus-osal-superloop
+    #microtbx-modbus-tests
     pthread
 )
 
@@ -35,7 +38,7 @@ target_link_libraries(${PROJECT_NAME}
     ${PROJECT_LIBRARIES}
 )
 
-# Create microtbx_MISRA for MISRA checking with cppcheck.
-include("${CMAKE_SOURCE_DIR}/third_party/microtbx/source/misra.cmake")
+# Create microtbx_modbus_MISRA for MISRA checking with cppcheck.
+include("${CMAKE_SOURCE_DIR}/third_party/microtbx-modbus/source/misra.cmake")
 
 

@@ -1,5 +1,5 @@
 /************************************************************************************//**
-* \file         tests/base/LINUX_PC/main.c
+* \file         tests/modbus/LINUX_PC/main.c
 * \brief        Test program application source file.
 * \internal
 *----------------------------------------------------------------------------------------
@@ -37,7 +37,9 @@
 /****************************************************************************************
 * Include files
 ****************************************************************************************/
+#if 0
 #include "unittests.h"                           /* Unit tests header                  */
+#endif
 
 
 /************************************************************************************//**
@@ -49,12 +51,15 @@
 ****************************************************************************************/
 int main(int argc, char *argv[])
 {
-  int result;
+  int result = 0;
 
+  /* TODO Enable initialization and running of the unit tests, once developed. */
+  #if 0
   /* Initialize the unit test environment. */
   initializeTests();
   /* Run the unit tests. */
   result = runTests();
+  #endif
   /* Set the program exit code. */
   return result;
 } /*** end of main ***/
