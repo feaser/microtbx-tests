@@ -14,12 +14,12 @@ set(PROJECT_INCLUDES
 
 # Configure project libraries.
 set(PROJECT_LIBRARIES
-    #unity
+    unity
     microtbx
     microtbx-linux
     microtbx-modbus
     microtbx-modbus-osal-superloop
-    #microtbx-modbus-tests
+    microtbx-modbus-tests
     pthread
 )
 
