@@ -50,7 +50,7 @@ extern "C" {
 *   H E A P   M O D U L E   C O N F I G U R A T I O N
 ****************************************************************************************/
 /** \brief Configure the size of the heap in bytes. */
-#define TBX_CONF_HEAP_SIZE                       (2048U)
+#define TBX_CONF_HEAP_SIZE                       (8192U)
 
 
 #ifdef __cplusplus
