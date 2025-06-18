@@ -51,10 +51,14 @@ int main(int argc, char *argv[])
 {
   int result = 0;
 
+  /* Setup the unit test environment. */
+  setUp();
   /* Initialize the unit test environment. */
   initializeTests();
   /* Run the unit tests. */
   result = runTests();
+  /* Tear down the unit test environment. */
+  tearDown();
   /* Set the program exit code. */
   return result;
 } /*** end of main ***/
